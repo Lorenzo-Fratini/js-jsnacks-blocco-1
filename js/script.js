@@ -17,11 +17,12 @@ console.log(fullnames);
 
 
 
+
 // Crea due array che hanno un numero di elementi diversi.
 // Aggiungi elementi all'array che ha meno elementi fino a
 // quando ne avrà tanti quanti l'altro.
 
-//sol 1
+//method 1
 // var arr1 = [ 5 ];
 // var arr2 = [ 15, 2, 7, 5, 7 ];
 //
@@ -45,7 +46,8 @@ console.log(fullnames);
 //
 // console.log(short, long);
 
-// sol 2
+
+// method 2
 // var arr1 = [ 5 ];
 // var arr2 = [ 15, 2, 7, 5, 7 ];
 //
@@ -69,6 +71,7 @@ console.log(fullnames);
 
 
 
+
 // Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
 // finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
 
@@ -84,6 +87,8 @@ console.log(fullnames);
 // }
 //
 // console.log('somma finale: ' + sum);
+
+
 
 
 // Crea due tag div con due id diversi.
