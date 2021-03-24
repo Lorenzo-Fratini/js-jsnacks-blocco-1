@@ -144,35 +144,48 @@ function newStudent() {
   return newStudent;
 }
 
+function addNewStudent() {
+  
+  var addNewStudent = newStudent();
+
+  var newStudentName = addNewStudent['name'];
+  var newStudentSurname = addNewStudent['surname'];
+  var newStudentAge = addNewStudent['age']
+
+  $('#students').append(trGen(newStudentName, newStudentSurname, newStudentAge));
+
+  return addNewStudent;
+}
+
 function es2() {
 
   var students = [
 
-    {'name' : 'Jhon', 'surname' : 'Doe'}, 
-    {'name' : 'Jane','surname' : 'Doe'},
-    {'name' : 'Lorem','surname' : 'Ipsum'}
+    {'name' : 'Jhon', 'surname' : 'Doe', 'age' : '30'}, 
+    {'name' : 'Jane','surname' : 'Doe', 'age' : '25'},
+    {'name' : 'Lorem','surname' : 'Ipsum', 'age' : '18'},
   ];
 
   for (i = 0; i < students.length; i++) {
 
     var student = students[i];
-    logObj(student);
+
+    var studentName = student['name'];
+    var studentSurname = student['surname'];
+    var studentAge = student['age'];
+
+    $('#students').append(trGen(studentName, studentSurname, studentAge));
   }
 
-  // Dare la possibilità all'utente attraverso 3 prompt di
-  // aggiungere un nuovo oggetto studente inserendo
-  // nell'ordine: nome, cognome e età.
+  var newStudent = $('#add-student').click(addNewStudent);
 
-  // var addNewStudent = newStudent();
-  // students.push(addNewStudent);
-
-  // console.log(students);
+  students.push(newStudent);
 }
 
 function init() {
   
- es1();
-// es2();
+// es1();
+ es2();
 
 }
 
