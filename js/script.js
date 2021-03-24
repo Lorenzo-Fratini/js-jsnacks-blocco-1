@@ -107,6 +107,9 @@
 // }
 
 
+
+// 24/03/2021
+
 // Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età.
 // Stampare a schermo attraverso il for in tutte le proprietà.
 
@@ -124,6 +127,22 @@ function es1() {
 
 // Creare un array di oggetti di studenti. 
 // Ciclare su tutti gli studenti e stampare per ognuno nome e cognome.
+
+function newStudent() {
+
+  var name = prompt('Dimmi il tuo nome');
+  var surname = prompt('Dimmi il tuo cognome');
+  var age = prompt('Dimmi la tua età');
+
+  var newStudent = {
+
+    'name' : name,
+    'surname' : surname,
+    'age' : age
+  };
+
+  return newStudent;
+}
 
 function es2() {
 
