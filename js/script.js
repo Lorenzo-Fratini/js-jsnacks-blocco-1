@@ -2,27 +2,28 @@
 // lista di nomi e una lista di cognomi, Gatsby vuole
 // generare una falsa lista di invitati.
 
-var names = ['Michele', 'Fabio', 'Roberto'];
-var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
-var fullnames = [];
-
-for (i=0;i<5;i++){
-  var rndName = Math.floor(Math.random() * 3);
-  var rndLast = Math.floor(Math.random() * 3);
-  var fullname = names[rndName] + ' ' + lastnames[rndLast];
-  fullnames.push(fullname);
-}
-
-console.log(fullnames);
 
 
+// var names = ['Michele', 'Fabio', 'Roberto'];
+// var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
+// var fullnames = [];
+
+// for (i=0;i<5;i++){
+//   var rndName = Math.floor(Math.random() * 3);
+//   var rndLast = Math.floor(Math.random() * 3);
+//   var fullname = names[rndName] + ' ' + lastnames[rndLast];
+//   fullnames.push(fullname);
+// }
+
+// console.log(fullnames);
 
 
 // Crea due array che hanno un numero di elementi diversi.
 // Aggiungi elementi all'array che ha meno elementi fino a
 // quando ne avrà tanti quanti l'altro.
 
-//method 1
+// method 1
+
 // var arr1 = [ 5 ];
 // var arr2 = [ 15, 2, 7, 5, 7 ];
 //
@@ -46,8 +47,8 @@ console.log(fullnames);
 //
 // console.log(short, long);
 
-
 // method 2
+
 // var arr1 = [ 5 ];
 // var arr2 = [ 15, 2, 7, 5, 7 ];
 //
@@ -70,8 +71,6 @@ console.log(fullnames);
 // console.log(arr2);
 
 
-
-
 // Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
 // finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
 
@@ -87,8 +86,6 @@ console.log(fullnames);
 // }
 //
 // console.log('somma finale: ' + sum);
-
-
 
 
 // Crea due tag div con due id diversi.
@@ -108,3 +105,56 @@ console.log(fullnames);
 //     odd.innerHTML += numbers[i] + '<br>';
 //   }
 // }
+
+
+// Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età.
+// Stampare a schermo attraverso il for in tutte le proprietà.
+
+function es1() {
+
+  var student = {
+
+    'name' : 'Jhon',
+    'surname' : 'Doe',
+    'age' : '30'
+  };
+
+  logObj(student);
+}
+
+// Creare un array di oggetti di studenti. 
+// Ciclare su tutti gli studenti e stampare per ognuno nome e cognome.
+
+function es2() {
+
+  var students = [
+
+    {'name' : 'Jhon', 'surname' : 'Doe'}, 
+    {'name' : 'Jane','surname' : 'Doe'},
+    {'name' : 'Lorem','surname' : 'Ipsum'}
+  ];
+
+  for (i = 0; i < students.length; i++) {
+
+    var student = students[i];
+    logObj(student);
+  }
+
+  // Dare la possibilità all'utente attraverso 3 prompt di
+  // aggiungere un nuovo oggetto studente inserendo
+  // nell'ordine: nome, cognome e età.
+
+  // var addNewStudent = newStudent();
+  // students.push(addNewStudent);
+
+  // console.log(students);
+}
+
+function init() {
+  
+ es1();
+// es2();
+
+}
+
+$(document).ready(init);
