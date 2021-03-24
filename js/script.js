@@ -177,9 +177,15 @@ function es2() {
     $('#students').append(trGen(studentName, studentSurname, studentAge));
   }
 
-  var newStudent = $('#add-student').click(addNewStudent);
+  var newStudent = $('#add-student').click(function(){
+
+    addNewStudent(); 
+    delBtns();
+  });
 
   students.push(newStudent);
+
+  delBtns();
 }
 
 function init() {

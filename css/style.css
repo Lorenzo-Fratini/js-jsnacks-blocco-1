@@ -34,7 +34,7 @@ tr:last-child {
 
 th,
 td {
-  min-width: 50px;
+  width: 80px;
   padding: 10px;
   border-right: 1px solid #fff;
 }
@@ -42,6 +42,10 @@ td {
 th:last-child,
 td:last-child {
   border-right: none;
+}
+
+td {
+  text-transform: capitalize;
 }
 
 .cont {
@@ -81,6 +85,18 @@ p {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.delete {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  background: red;
 }
 
 
